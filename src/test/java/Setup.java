@@ -14,6 +14,7 @@ public class Setup {
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver(options);
     wait = new WebDriverWait(driver, 60);
+    driver.manage().deleteAllCookies();
     driver.get("https://www.worldmarket.com/");
     }
 
